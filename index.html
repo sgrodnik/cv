@@ -5,36 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Grodnik</title>
     <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
         @media (prefers-color-scheme: dark) {
             body {
-                background-color: #121212;
-                color: #e0e0e0;
+                background-color: #181a1b;
+                color: #ccc;
             }
             a {
-                color: #8ab4f8;
+                color: #68a9f8;
             }
             a:visited {
-                color: #c58af9;
+                color: #b589ee;
             }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <p><strong><em>Hi, I’m Simon (Semyon) - ask too many questions, sometimes dramatic, but always hands-on.</em></strong></p>
-        <p>C# / BIM Developer | Barcelona, Spain</p>
-    </header>
-
-    <hr>
-
-    <main>
+    <nav aria-label="Site Navigation">
         <ul>
-            <li><strong>Resume:</strong> <a href="resume.html">Read CV / Resume</a></li>
-            <li><strong>Email:</strong> sgrodnik [at] gmail {dot} com</li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/sgrodnik">sgrodnik</a></li>
-            <li><strong>Telegram:</strong> <a href="https://t.me/sgrodnik">@sgrodnik</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
         </ul>
+    </nav>
+
+    <main id="main-content">
+        <section>
+            <h1>Simon Grodnik</h1>
+            <p>C# / BIM Developer &middot; Barcelona, Spain</p>
+            <p>Hi, I’m Simon (Semyon) - ask too many questions, sometimes dramatic, but always hands-on.</p>
+        </section>
+
+        <section>
+            <h2>Resume</h2>
+            <ul>
+                <li><a href="resume.html">Read CV / Resume</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Elsewhere</h2>
+            <ul>
+                <li>Email: sgrodnik [at] gmail {dot} com</li>
+                <li>GitHub: <a href="https://github.com/sgrodnik">sgrodnik</a></li>
+                <li>Telegram: <a href="https://t.me/sgrodnik">@sgrodnik</a></li>
+            </ul>
+        </section>
     </main>
 
 </body>
